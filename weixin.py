@@ -172,7 +172,7 @@ friend_type = 1            //默认为1，为1时，就是用openid发送，不�
 content="实际要发送的内容"  //实际要发送的内容,为json格式，请参考自己所选择的模板，进行内容编排
 
 wx=WeiXin(appid=appid,secret=secret)
-c=wx.send_template_msg(friend, 2, content, template_id)
+c=wx.send_template_msg(friend, friend_type, content, template_id)
 print(c)
 '''
 
